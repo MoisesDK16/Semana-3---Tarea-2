@@ -3,15 +3,7 @@
 --Primero elimino la cardinalidad entre la tabla empleado y oficina 
 ALTER TABLE jardineria.empleado DROP FOREIGN KEY EMPLEADO_X_OFICINA;
 
-<<<<<<< HEAD
 --toca eliminar el indice de la tabla
-=======
---Eliminar la relación foránea:
-ALTER TABLE `empleado` DROP FOREIGN KEY `EMPLEADO_X_OFICINA`;
-
---Primero toca eliminar relacion Foranea con la tabla quye tiene relacion, en este caso hay una relacion foranea con la tabla empleado 
---Y por eso primero hay que eliminar la relacion foranea para que no surga un conflicto de relacion
->>>>>>> bc408959974ae0025df1f1655df1a65062484f69
 ALTER TABLE `empleado` DROP INDEX `codigo_oficina`;
 
 -- Ahora si puedo eliminar la clave primaria existente de la tabla oficina
