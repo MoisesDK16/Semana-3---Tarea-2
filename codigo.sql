@@ -1,5 +1,11 @@
 --Estoy usando la bdd "jardineria" de la clase 
 
+--Primero elimino la cardinalidad entre la tabla empleado y oficina 
+ALTER TABLE jardineria.empleado DROP FOREIGN KEY EMPLEADO_X_OFICINA;
+
+--Eliminar la relación foránea:
+ALTER TABLE `empleado` DROP FOREIGN KEY `EMPLEADO_X_OFICINA`;
+
 --Primero toca eliminar relacion Foranea con la tabla quye tiene relacion, en este caso hay una relacion foranea con la tabla empleado 
 --Y por eso primero hay que eliminar la relacion foranea para que no surga un conflicto de relacion
 ALTER TABLE `empleado` DROP INDEX `codigo_oficina`;
