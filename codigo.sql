@@ -1,3 +1,4 @@
+--Estoy usando la bdd "jardineria" de la clase 
 
 --Primero toca eliminar relacion Foranea con la tabla quye tiene relacion, en este caso hay una relacion foranea con la tabla empleado 
 --Y por eso primero hay que eliminar la relacion foranea para que no surga un conflicto de relacion
@@ -14,7 +15,6 @@ ALTER TABLE `oficina`
 --Borro la columna codigo_oficina como clave primaria y se la mantengo como índice único si es necesario--
 ALTER TABLE `oficina`
 ADD UNIQUE (`codigo_oficina`);
-
 
 --Ahora añado nuevamente la relacion Foranea de la tabla empleado con oficina que al principio habia eliminado
 ALTER TABLE empleado
